@@ -2,7 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 
 
-public class Plateau extends JFrame {
+public class echiquier extends JFrame {
 
   private static final long serialVersionUID = 1890713488426328269L;
 
@@ -10,18 +10,18 @@ public class Plateau extends JFrame {
   public static String[] chiffre = { "1", "2", "3", "4", "5", "6", "7", "8" };
 
   public DrawPanel drawPanel;
-  public Piece[] plateau;
+  public Piece[] echiquier;
   public boolean joueur;
 
 
 
 
 
-  public Plateau(Piece[] plateau, boolean joueur){
+  public echiquier(Piece[] echiquier, boolean joueur){
     super();
     this.joueur = joueur;
-    this.plateau = plateau;
-    this.setTitle("Plateau");
+    this.echiquier = echiquier;
+    this.setTitle("echiquier");
     this.getContentPane().setPreferredSize(new Dimension(720, 720));
     this.pack();
     this.setLocationRelativeTo(null);
@@ -36,9 +36,9 @@ public class Plateau extends JFrame {
 
 
 
-  public void refresh(Piece[] plateau, boolean joueur){
+  public void refresh(Piece[] echiquier, boolean joueur){
     this.joueur = joueur;
-    this.plateau = plateau;
+    this.echiquier = echiquier;
     drawPanel.repaint();
     this.setVisible(true);
   }
