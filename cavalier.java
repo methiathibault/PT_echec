@@ -40,9 +40,9 @@ public class cavalier extends piece{
 
   public Image getImage(){
     if (this.couleur)
-      return Toolkit.getDefaultToolkit().getImage("img/WhiteKnight.png");
+      return Toolkit.getDefaultToolkit().getImage("img/CavalierBlanc.png");
     else
-      return Toolkit.getDefaultToolkit().getImage("img/BlackKnight.png");
+      return Toolkit.getDefaultToolkit().getImage("img/CavalierNoir.png");
   }
 
 
