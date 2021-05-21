@@ -26,7 +26,7 @@ public class pion extends piece{
     if (xDestination == xPiece && yDestination - yPiece == avant)
       //mouvement en avant qui requiert qu'il n'y ai pas d'ennemi sur la case de destination
       return 2;
-    else if ((xDestination == xPiece && yDestination - yPiece == 2*avant) && !this.aEffectueUnMouvement)
+    else if ((xDestination == xPiece && yDestination - yPiece == 2*avant) && !this.aFaitDeplacement)
       //mouvement qui requiert que le pion n'ai pas deja effectué un mouvement et qu'il n'y ai pas d'enemi sur le chemin
       return 3;
     else if ((xDestination - xPiece == -1 && yDestination - yPiece == avant) || (xDestination - xPiece == 1 && yDestination - yPiece == avant))
@@ -43,9 +43,9 @@ public class pion extends piece{
 
   public Image getImage(){
     if (this.couleur)
-      return Toolkit.getDefaultToolkit().getImage("img/WhitePawn.png");
+      return Toolkit.getDefaultToolkit().getImage("img/PionBlanc.png");
     else
-      return Toolkit.getDefaultToolkit().getImage("img/BlackPawn.png");
+      return Toolkit.getDefaultToolkit().getImage("img/PionNoir.png");
   }
 
 
