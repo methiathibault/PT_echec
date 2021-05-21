@@ -4,6 +4,8 @@ import javax.swing.*;
 
 public class echiquier extends JFrame {
 
+  private static final long serialVersionUID = 1L;
+  
   public static String[] lettre = { "A", "B", "C", "D", "E", "F", "G", "H" };
   public static String[] chiffre = { "1", "2", "3", "4", "5", "6", "7", "8" };
 
@@ -46,7 +48,9 @@ public class echiquier extends JFrame {
 
 
   class DrawPanel extends JPanel {
-
+    
+    private static final long serialVersionUID = 1L;
+    
     public DrawPanel() {
       this.setOpaque(true);
 
