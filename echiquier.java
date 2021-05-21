@@ -10,14 +10,14 @@ public class echiquier extends JFrame {
   public static String[] chiffre = { "1", "2", "3", "4", "5", "6", "7", "8" };
 
   public DrawPanel drawPanel;
-  public Piece[] echiquier;
+  public piece[] echiquier;
   public boolean joueur;
 
 
 
 
 
-  public echiquier(Piece[] echiquier, boolean joueur){
+  public echiquier(piece[] echiquier, boolean joueur){
     super();
     this.joueur = joueur;
     this.echiquier = echiquier;
@@ -36,7 +36,7 @@ public class echiquier extends JFrame {
 
 
 
-  public void refresh(Piece[] echiquier, boolean joueur){
+  public void refresh(piece[] echiquier, boolean joueur){
     this.joueur = joueur;
     this.echiquier = echiquier;
     drawPanel.repaint();
