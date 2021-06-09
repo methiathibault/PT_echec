@@ -22,7 +22,7 @@ public class echiquier extends JFrame {
     this.joueur = joueur;
     this.echiquier = echiquier;
     this.setTitle("echiquier");
-    this.getContentPane().setPreferredSize(new Dimension(1000, 1000));
+    this.getContentPane().setPreferredSize(new Dimension(750, 750));
     this.pack();
     this.setLocationRelativeTo(null);
     this.setResizable(false);
